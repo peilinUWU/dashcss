@@ -332,13 +332,12 @@ th:last-child:not(.CalendarDay),
 td:last-child:not(.CalendarDay) {
   padding-right: 0; }
 
-td.dash-cell.cell--selected.focused {
-  background-color: #c4f0d5 !important;
-}
-
-td.dash-cell {
-  border-color: #d8d8d8 !important;
-}
+style_data_conditional=[
+{
+  "if": {"state": "selected"},
+  "backgroundColor": "inherit !important",
+  "border": "inherit !important",
+}   
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
